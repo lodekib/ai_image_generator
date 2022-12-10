@@ -7,7 +7,7 @@ const app =  express();
 
 //use body parser
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 
 // configure to use static files
 app.use(express.static(path.join(__dirname,'public')));
